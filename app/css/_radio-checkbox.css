@@ -1,0 +1,48 @@
+
+[type=radio],
+[type=checkbox] {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 2px;
+  border: solid 1px #cccccc;
+  margin-right: 14px;
+  margin-bottom: 30px;
+  background: none;
+  cursor: pointer;
+}
+
+[type=radio]:before,
+[type=checkbox]:before {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  background-color: #eee;
+  content: "";
+}
+
+[type=radio]:checked::after,
+[type=checkbox]:checked::after {
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  background-color: #ff8811;
+  content: "";
+}
+
+[type=radio],
+[type=radio]:checked::before{
+  border-radius: 100%;
+}

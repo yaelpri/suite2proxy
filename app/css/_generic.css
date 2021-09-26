@@ -1,0 +1,68 @@
+
+* {
+  padding:          0;
+  margin:           0;
+  font-family:      Courier;
+}
+
+body::-webkit-scrollbar {
+  width:            2px;
+  height:           2px;
+}
+
+body::-webkit-scrollbar-track {
+  background:       #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius:    2px;
+  border:           1px solid #ff8811;
+}
+
+body {
+  scrollbar-width:  thin;
+  scrollbar-color:  #ff8811 #ff8811;
+  background:       #555;
+  overflow-x:       hidden;
+  overflow-y:       scroll;
+}
+
+h1 {
+  display:          block;
+  position:         relative;
+  width:            80%;
+  padding-top:      90px;
+  padding-left:     150px;
+  margin:           auto;
+  margin-top:       40px;
+  margin-bottom:    10px;
+  color:            #eee;
+}
+
+h1:after {
+  display:              block;
+  position:             absolute;
+  left:                 0;
+  top:                  0;
+  width:                160px;
+  height:               160px;
+  background-image:     url('/img/logo-366x420.png');
+  background-repeat:    no-repeat;
+  background-size:      140px 160px;
+  content:              " ";
+  z-index:              999;
+}
+
+h3 {
+  display:          block;
+  margin-left:      3%;
+  color:            #bbb;
+}
+
+.invisible {
+  height:           0 !important;
+  top:              0 !important;
+  opacity:          0.0 !important;
+}
+

@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="/css/schedule-job-complex.css">
+<link rel="stylesheet" href="/css/schedule-job-inputs.css">
+
+<script src="/js/schedule-job-complex.js"></script>
+
+<h1>
+  Schedule chained Suite2p computation
+  <a class="hbtn" href="javascript:register_complex_job()">Register!</a>
+</h1>
+
+<br>
+<br>
+
+<div id="settings" class="settings-panel" div-title="computation settings">
+  {SETTINGS}
+</div>
+
+<div id="experiments" class="chained-experiments" div-title="selected experiments">
+  <div class="chained-experiment" exp-index="1" dir-date="{PATH}" exp-name="{BASE_EXP}"></div>
+  <a id="add" class="chained-experiment" exp-name="+" href="javascript:launch_experiment_selection()"></a>
+</div>
+
+<div id="selector" class="experiment-tree invisible" onload="javascript:initialize_clickables();">
+  <h2>
+    add an experiment
+    <a class="close" href="javascript:cancel_experiment_selection();"></a>
+  </h2>
+  <br>
+  {TREE}
+  <script>
+    initialize_clickables();
+  </script>
+</div>
+

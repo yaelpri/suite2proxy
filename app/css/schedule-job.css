@@ -1,0 +1,236 @@
+
+* {
+  padding:          0;
+  margin:           0;
+  font-family:      Courier;
+}
+
+body::-webkit-scrollbar {
+  width:            2px;
+  height:           2px;
+}
+
+body::-webkit-scrollbar-track {
+  background:       #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius:    2px;
+  border:           1px solid #ff8811;
+}
+
+body {
+  scrollbar-width:  thin;
+  scrollbar-color:  #ff8811 #ff8811;
+  background:       #555;
+  overflow-x:       hidden;
+  overflow-y:       scroll;
+}
+
+h1 {
+  display:          block;
+  width:            80%;
+  margin:           auto;
+  margin-top:       40px;
+  margin-bottom:    10px;
+  color:            #eee;
+}
+
+h3 {
+  display:          block;
+  margin-left:      3%;
+  color:            #bbb;
+}
+
+.controls {
+  display: block;
+  width: 80%;
+  margin: auto;
+  background: #000;
+  border-radius: 2px;
+  padding: 20px 30px;
+}
+
+.btn {
+  display:          inline-block;
+  padding:          14px 24px;
+  border-radius:    2px;
+  text-decoration:  none;
+  cursor:           pointer;
+  background:       #e8e8e8;
+  color:            #333;
+  font-weight:      900;
+  font-size:        1.2em;
+
+  margin-right: 2px;
+  margin-bottom: 2px;
+
+  transition:       color 0.12s ease-in,
+               background 0.12s ease-in;
+}
+
+.hbtn {
+  display:          inline-block;
+  padding:          14px 18px;
+  border-radius:    2px;
+  text-decoration:  none;
+  cursor:           pointer;
+  background:       #ff8811;
+  color:            #121212;
+
+  float:            right;
+
+  margin-right:     10px;
+  margin-bottom:    2px;
+
+  transition:       color 0.12s ease-in,
+               background 0.12s ease-in;
+}
+
+.long {
+    margin-left: 5%;
+    min-width: 50%;
+}
+
+.btn:hover {
+    background:     #ff8811;
+    color:          #000;
+}
+.hbtn:hover {
+    background:     #ff6600;
+    color:          #000;
+}
+
+.btn:active,
+.hbtn:active {
+    background:     #000;
+    color:          #ff8811;
+}
+
+.log-view {
+  display:          block;
+  width:            80%;
+  height:           80%;
+  padding:          4%;
+  margin:           auto;
+  margin-top:       50px;
+  background:       #111;
+  border-radius:    2px;
+  padding:          20px 30px;
+  color:            #eee;
+}
+
+.job-builder {
+  display:          block;
+  width:            80%;
+  height:           80%;
+  padding:          4%;
+  margin:           auto;
+  margin-top:       50px;
+  background:       #111;
+  border-radius:    2px;
+  padding:          20px 30px;
+  color:            #eee;
+}
+
+.df-view {
+  display:          block;
+  position:         relative;
+
+  color:            #fff;
+  font-size:        1.3em;
+  font-weight:      900;
+
+  padding:          20px 20px;
+  margin-bottom:    10px;
+  border-radius:    2px;
+  background:       #ff8811;
+}
+
+.df-view:last-child {
+  margin-bottom:    2px;
+}
+
+.df-label {
+  display:          block;
+  font-size:        1.2em;
+  margin-bottom:    10px;
+  color:            #000;
+}
+
+.inputs {
+  max-width:        85%;
+  padding:          5px 5px 5px 20px;
+}
+
+.settings-key {
+  color:            #333;
+}
+
+.settings-val {
+  border-width:     1px;
+  border-style:     solid;
+  border-color:     #000;
+  border-radius:    2px;
+  background:       #666;
+  padding:          8px 3px;
+  color:            #eee;
+  max-width:        40px;
+  margin-right:     10px;
+  text-align:       center;
+}
+
+.embedded-log-view {
+  display:          block;
+
+  width:            80%;
+  min-height:       500px;
+
+  padding:          20px 24px;
+  margin:           auto;
+  margin-top:       20px;
+
+  border-style:     solid;
+  border-color:     #e8e8e8;
+  border-width:     6px;
+  border-radius:    2px;
+}
+
+.btnplus {
+  display:          block;
+  position:         absolute;
+
+  top:              50%;
+  right:            30px;
+
+  transform:        translate(0, -50%);
+
+  padding:          14px 14px;
+
+  border-radius:    1000px;
+
+  text-decoration:  none;
+  cursor:           pointer;
+  background:       #e8e8e8;
+  color:            #121212;
+
+  margin-right:     2px;
+  margin-bottom:    2px;
+
+  font-size:        2em;
+  font-weight:      900;
+
+  transition:       color 0.12s ease-in,
+               background 0.12s ease-in;
+}
+
+.btnplus:hover {
+  background:       #fff;
+  color:            #000;
+}
+
+.btnplus:active {
+  background:       #000;
+  color:            #fff;
+}

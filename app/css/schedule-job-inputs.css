@@ -1,0 +1,26 @@
+
+.settings-key {
+  color:            #333;
+  font-size:        .7em;
+  min-width:        200px !important;
+  display:          inline-block;
+  text-align:       right;
+}
+
+.settings-val {
+  border-width:     1px;
+  border-style:     solid;
+  border-color:     #000;
+  border-radius:    2px;
+  background:       #666;
+  padding:          8px 3px;
+  color:            #eee;
+  max-width:        40px;
+  margin-right:     10px;
+  text-align:       center;
+}
+
+[type=text] {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}

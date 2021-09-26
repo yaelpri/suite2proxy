@@ -1,0 +1,9 @@
+
+.controls {
+  display: block;
+  width: 80%;
+  margin: auto;
+  background: #000;
+  border-radius: 2px;
+  padding: 20px 30px;
+}

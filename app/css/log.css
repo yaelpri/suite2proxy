@@ -1,0 +1,13 @@
+
+.log-view {
+  display:          block;
+  width:            80%;
+  height:           80%;
+  padding:          4%;
+  margin:           auto;
+  margin-top:       50px;
+  background:       #111;
+  border-radius:    2px;
+  padding:          20px 30px;
+  color:            #eee;
+}
