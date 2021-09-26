@@ -32,7 +32,7 @@
 | ``` chrome http://10.0.0.100/ ```                                | Open webpage in any browser (Only tested in Chromium)                                                             |  
   
 ###
-####Optional running arguments
+#### Optional running arguments
 * --data-root: path to directory containing mice names
 * --ip: default ip "0.0.0.0"
 * --port: default port "80"
