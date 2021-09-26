@@ -32,7 +32,7 @@ class Engine(object):
     for key, value in _SETTING_OVERRIDES.items():
         DEFAULT_SETTINGS[key] = value
 
-    # Use to test GUI and test |sanity|
+    # Use to test GUI and |sanity|
     _DIR_TEST_DATA = join(dirname(__file__), 'test')
 
     @classmethod
