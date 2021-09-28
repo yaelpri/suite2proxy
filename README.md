@@ -36,7 +36,7 @@
 * --data-root: path to directory containing mice names
 * --ip: default ip "0.0.0.0"
 * --port: default port "80"
-* --data-extension: file type (default "sbx")
+* --data-extension: file type (default "raw")
 * --ops: optional argument. Option to add path to suite2p settings file (ops.npy)
 
 ###

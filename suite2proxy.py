@@ -34,7 +34,7 @@ class Suite2Proxy(Flask):
         ),
         ('-dx', '--data-extension'): dict(
             default=Engine.INPUT_FORMAT,
-            help='experiment data extension (sbx/???)'
+            help='experiment data extension (raw)'
         ),
         ('-op', '--ops'): dict(
             default=None,

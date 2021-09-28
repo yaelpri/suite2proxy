@@ -11,7 +11,7 @@ class Engine(object):
     Send to Worker suite2p-run custom settings """
 
     # Experiment file extension
-    INPUT_FORMAT = 'sbx'
+    INPUT_FORMAT = 'raw'
 
     _SETTING_OVERRIDES = dict(
         fs=31,
@@ -32,7 +32,7 @@ class Engine(object):
     for key, value in _SETTING_OVERRIDES.items():
         DEFAULT_SETTINGS[key] = value
 
-    # Use to test GUI and |sanity|
+    # Use to test GUI
     _DIR_TEST_DATA = join(dirname(__file__), 'test')
 
     @classmethod
