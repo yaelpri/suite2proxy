@@ -15,7 +15,8 @@ class Engine(object):
 
     _SETTING_OVERRIDES = dict(
         fs=31,
-        input_format=INPUT_FORMAT
+        input_format=INPUT_FORMAT,
+        delete_bin=True
     )
 
     USELESS_SETTINGS = (
