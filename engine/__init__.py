@@ -11,11 +11,13 @@ class Engine(object):
     Send to Worker suite2p-run custom settings """
 
     # Experiment file extension
-    INPUT_FORMAT = 'sbx'
+    FILE_FORMAT = 'raw'
+    INPUT_FORMAT = 'haus'
 
     _SETTING_OVERRIDES = dict(
-        fs=31,
-        input_format=INPUT_FORMAT
+        fs=3.56,
+        input_format=INPUT_FORMAT,
+        delete_bin=False
     )
 
     USELESS_SETTINGS = (
@@ -23,7 +25,10 @@ class Engine(object):
         'h5py',
         'save_path0',
         'save_folder',
-        'subfolders'
+        'subfolders',
+        'nwb_driver',
+        'nwb_file',
+        'nwb_series'
     )
 
     DEFAULT_SETTINGS = default_ops()
@@ -42,7 +47,7 @@ class Engine(object):
         dir_test_data = cls._DIR_TEST_DATA
 
         proxy = cls(data_root=dir_test_data,
-                    data_extension=cls.INPUT_FORMAT)
+                    data_extension=cls.FILE_FORMAT)
 
         proxy.activate_worker()
 
@@ -55,7 +60,7 @@ class Engine(object):
 
         proxy.terminate_worker()
 
-    def __init__(self, data_root=None, data_extension=INPUT_FORMAT):
+    def __init__(self, data_root=None, data_extension=FILE_FORMAT):
         assert isdir(data_root)
 
         self._data_root = data_root

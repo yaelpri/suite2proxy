@@ -33,8 +33,8 @@ class Suite2Proxy(Flask):
             help='Root experiment data directory'
         ),
         ('-dx', '--data-extension'): dict(
-            default=Engine.INPUT_FORMAT,
-            help='experiment data extension (sbx/???)'
+            default=Engine.FILE_FORMAT,
+            help='experiment data extension (raw/???)'
         ),
         ('-op', '--ops'): dict(
             default=None,
@@ -73,7 +73,7 @@ class Suite2Proxy(Flask):
         ip='0.0.0.0',
         port=80,
         data_root=None,
-        data_extension=Engine.INPUT_FORMAT,
+        data_extension=Engine.FILE_FORMAT,
         ops=None
     ):
         assert data_root

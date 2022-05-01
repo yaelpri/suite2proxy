@@ -3,7 +3,7 @@ import shutil
 from time import sleep, localtime
 from json import dumps
 from suite2p import run_s2p, default_ops
-from os.path import join, exists, isfile
+from os.path import join, exists
 from multiprocessing import Process
 
 
@@ -49,11 +49,15 @@ class Worker(Process):
             dir_out += '.'
         return dir_out
 
+    @staticmethod
+    def copy_function(root, processing_results_path):
+        shutil.copytree(src=root, dst=join(processing_results_path, os.path.basename(root)))
+
     @classmethod
     def process(cls, settings, exp_paths):
         """ Copy data file from data dir to "in_process" dir.
         Run suite2p with the settings scheduled in the GUI.
-        Delete data bin if exist, move suite2p results to original data dir. """
+        Move suite2p results to original data dir. """
 
         assert exp_paths
 
@@ -80,13 +84,9 @@ class Worker(Process):
 
         run_s2p(ops=ops, db=dict(data_path=suite2p_process_path, save_path0=processing_results_path))
 
-        if isfile(join(processing_results_path, 'suite2p\plane0\data.bin')):
-            os.remove(join(processing_results_path, 'suite2p\plane0\data.bin'))
         shutil.move(processing_results_path + '\suite2p', join(exp_paths[0], os.path.basename(processing_results_path)))
-        shutil.rmtree(processing_results_path)
+        shutil.rmtree(processing_results_path, ignore_errors=True)
 
         cls.log(f'processing is complete.')
 
         cls.log(f'results @ "{join(exp_paths[0], os.path.basename(processing_results_path))}"')
-
-
