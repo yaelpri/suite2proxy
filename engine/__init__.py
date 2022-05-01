@@ -25,7 +25,10 @@ class Engine(object):
         'h5py',
         'save_path0',
         'save_folder',
-        'subfolders'
+        'subfolders',
+        'nwb_driver',
+        'nwb_series',
+        'nwb_file'
     )
 
     DEFAULT_SETTINGS = default_ops()
