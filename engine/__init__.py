@@ -12,10 +12,11 @@ class Engine(object):
 
     # Experiment file extension
     INPUT_FORMAT = 'raw'
+    FILE_TYPE = 'haus'
 
     _SETTING_OVERRIDES = dict(
         fs=31,
-        input_format=INPUT_FORMAT,
+        input_format=FILE_TYPE,
         delete_bin=True
     )
 
